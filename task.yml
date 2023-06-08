@@ -1,0 +1,8 @@
+---
+- name: Display message
+  hosts: your_remote_server
+  become: true
+  tasks:
+    - name: Display welcome message
+      debug:
+        msg: "Welcome to Ansible!"
