@@ -1,0 +1,9 @@
+---
+- name: Install Apache
+  hosts: your_remote_server
+  become: true
+  tasks:
+    - name: Install Apache package
+      package:
+        name: apache2
+        state: present
