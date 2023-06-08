@@ -2,6 +2,8 @@
 - name: Install Apache
   hosts: your_remote_server
   become: true
+  roles:
+    - common
   tasks:
     - name: Install Apache package
       package:
